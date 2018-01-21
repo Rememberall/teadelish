@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should not change 1`] = `
+<footer>
+  <input
+    className="search"
+    placeholder="Search for teas, venues"
+    type="text"
+  />
+  <nav>
+    <ul>
+      <li
+        className="selected"
+      >
+        Home
+      </li>
+      <li>
+        Profile
+      </li>
+    </ul>
+  </nav>
+</footer>
+`;
