@@ -1,9 +1,4 @@
-.checkin-feed {
-  list-style-type: none;
-  padding: 0.1em;
-}
-
-.checkin {
+.checkin-feed-item {
   border: solid black 1px;
   padding: 0.1em;
   margin-bottom: 0.1em;
@@ -11,16 +6,16 @@
   flex-direction: row;
 }
 
-.checkin img {
+.checkin-feed-item img {
   flex: 1;
   height: 4em;
   margin-right: 1em;
 }
 
-.checkin div {
+.checkin-feed-item div {
   flex: 7;
 }
 
-.checkin h1 {
+.checkin-feed-item h1 {
   font-size: 1em;
 }

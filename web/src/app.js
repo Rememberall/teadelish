@@ -1,14 +1,16 @@
 import React, { Fragment } from 'react';
+import latestCheckins from './mock/latest-checkins';
 import Header from './header';
 import Footer from './footer';
-import LatestCheckins from './checkins/latest';
+import CheckinFeed from './checkins/feed';
 import './app.css';
 
 const App = () => (
   <Fragment>
     <Header />
     <section className="content">
-      <LatestCheckins />
+      <h1>Latest checkins</h1>
+      <CheckinFeed checkins={latestCheckins} />
     </section>
     <Footer />
   </Fragment>
