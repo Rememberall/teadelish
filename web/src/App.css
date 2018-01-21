@@ -31,9 +31,13 @@ header {
 }
 
 .checkin img {
-  width: 4em;
+  flex: 1;
   height: 4em;
   margin-right: 1em;
+}
+
+.checkin div {
+  flex: 7;
 }
 
 .checkin h1 {
@@ -50,11 +54,10 @@ footer {
 }
 
 input.search {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin: 2vw;
   padding: 0.1em;
   line-height: 2em;
-  width: 100%;
+  width: 94vw;
 }
 
 nav {
