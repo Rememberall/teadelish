@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should not change 1`] = `
+<li
+  className="checkin-feed-item"
+>
+  <img
+    alt=""
+    src="http://www.swedishfoodshop.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/r/u/russian_earl_grey_20-pack_40g.jpg"
+  />
+  <div>
+    <h1>
+      Illy
+       
+      Espresso
+    </h1>
+    <p>
+      5
+       / 5
+    </p>
+    <p>
+      A rather short comment
+    </p>
+  </div>
+</li>
+`;
