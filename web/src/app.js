@@ -1,11 +1,13 @@
 import React, { Fragment } from 'react';
+import Header from './header';
+import Footer from './footer';
 import './app.css';
 
 import latestCheckins from './mock/latest-checkins';
 
 const App = () => (
   <Fragment>
-    <header>teadelish</header>
+    <Header />
     <section className="content">
       <h1>Latest checkins</h1>
       <ul className="checkin-feed">
@@ -26,19 +28,7 @@ const App = () => (
         ))}
       </ul>
     </section>
-    <footer>
-      <input
-        type="text"
-        className="search"
-        placeholder="Search for teas, venues"
-      />
-      <nav>
-        <ul>
-          <li className="selected">Home</li>
-          <li>Profile</li>
-        </ul>
-      </nav>
-    </footer>
+    <Footer />
   </Fragment>
 );
 
