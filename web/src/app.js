@@ -1,3 +1,5 @@
+// @flow
+
 import React, { Fragment } from 'react';
 import latestCheckins from './mock/latest-checkins';
 import Header from './header';

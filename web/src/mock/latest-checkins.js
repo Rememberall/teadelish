@@ -1,4 +1,8 @@
-const latestCheckins = [
+// @flow
+
+import type { Checkin } from '../checkins/feed/item/types';
+
+const latestCheckins: Checkin[] = [
   {
     beverage: {
       brand: 'Lipton',

@@ -1,18 +1,21 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// @flow
 
-import Item from './item';
-import itemPropTypes from './item/prop-types';
+import React from 'react';
+
+import type { Checkin } from './item/types';
+import CheckinFeedItem from './item';
 import './feed.css';
 
-const CheckinFeed = ({ checkins }) => (
+type Props = {
+  checkins: Checkin[]
+};
+
+const CheckinFeed = ({ checkins }: Props) => (
   <ul className="checkin-feed">
-    {checkins.map(checkin => <Item key={checkin.beverage.name} {...checkin} />)}
+    {checkins.map(checkin => (
+      <CheckinFeedItem key={checkin.beverage.name} {...checkin} />
+    ))}
   </ul>
 );
-
-CheckinFeed.propTypes = {
-  checkins: PropTypes.arrayOf(itemPropTypes).isRequired
-};
 
 export default CheckinFeed;

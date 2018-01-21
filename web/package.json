@@ -9,17 +9,19 @@
     "react-scripts": "1.1.0"
   },
   "scripts": {
-    "precommit": "stylelint \"src/**/*.css\" --fix && eslint . --fix && CI=true yarn test",
+    "precommit": "stylelint \"src/**/*.css\" --fix && eslint . --fix && flow && CI=true yarn test",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.1",
     "eslint": "^4.16.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-stylelint": "^8.1.0",
+    "eslint-plugin-flowtype": "^2.41.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.5.0",
@@ -39,9 +41,11 @@
       "jest": true
     },
     "extends": [
+      "plugin:flowtype/recommended",
       "airbnb",
       "plugin:prettier/recommended"
     ],
+    "parser": "babel-eslint",
     "parserOptions": {
       "ecmaVersion": 8,
       "ecmaFeatures": {
@@ -53,7 +57,8 @@
     },
     "plugins": [
       "prettier",
-      "react"
+      "react",
+      "flowtype"
     ],
     "rules": {
       "react/jsx-filename-extension": [
