@@ -12,15 +12,7 @@
 
 @media (min-width: 512px) {
   .content {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: 1024px) {
-  .content {
-    width: 50%;
+    width: 512px;
     margin-left: auto;
     margin-right: auto;
   }
