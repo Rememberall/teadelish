@@ -1,0 +1,16 @@
+.star-rating {
+  display: flex;
+  justify-content: space-around;
+}
+
+.star-rating > label {
+  cursor: pointer;
+}
+
+.star-rating > label > input[type="radio"] {
+  visibility: hidden;
+}
+
+.star-rating > .star-rating-clear {
+  width: auto;
+}
