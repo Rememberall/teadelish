@@ -17,20 +17,3 @@
     margin-right: auto;
   }
 }
-
-form > div {
-  display: flex;
-  margin-top: 1em;
-}
-
-form > div > label {
-  flex: 1;
-}
-
-form > div > input,textarea {
-  flex: 3;
-}
-
-button {
-  width: 100%;
-}
