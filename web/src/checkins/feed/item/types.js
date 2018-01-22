@@ -7,6 +7,6 @@ export type Beverage = {
 
 export type Checkin = {
   beverage: Beverage,
-  rating: number,
+  rating: ?number,
   comment: string
 };

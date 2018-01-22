@@ -7,6 +7,7 @@ import Header from './header';
 import Footer from './footer';
 import LatestCheckins from './checkins/latest';
 import CheckinForm from './checkins/form';
+import CheckinConfirmation from './checkins/confirmation';
 import './app.css';
 
 const App = () => (
@@ -17,6 +18,13 @@ const App = () => (
         <Switch>
           <Route exact path="/" component={LatestCheckins} />
           <Route exact path="/checkin" component={CheckinForm} />
+          <Route
+            exact
+            path="/checkin/confirmation"
+            render={({ location }) => (
+              <CheckinConfirmation checkin={location.state.checkin} />
+            )}
+          />
         </Switch>
       </section>
       <Footer />

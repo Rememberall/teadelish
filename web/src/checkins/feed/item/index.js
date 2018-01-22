@@ -3,6 +3,7 @@
 import React from 'react';
 
 import type { Checkin } from './types';
+import StarRating from '../../../rating/star';
 import './item.css';
 
 const CheckinFeedItem = ({ beverage, rating, comment }: Checkin) => (
@@ -15,7 +16,7 @@ const CheckinFeedItem = ({ beverage, rating, comment }: Checkin) => (
       <h1>
         {beverage.brand} {beverage.name}
       </h1>
-      <p>{rating} / 5</p>
+      <StarRating selectedRating={rating} />
       <p>{comment}</p>
     </div>
   </li>

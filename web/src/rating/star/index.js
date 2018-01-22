@@ -18,14 +18,20 @@ export function getFill(rating: number, selectedRating: ?number): string {
 
 type Props = {
   selectedRating: ?number,
-  onSelect: (rating: ?number) => void
+  onSelect: ?(rating: ?number) => void
 };
 
 const StarRating = ({ onSelect, selectedRating }: Props) => (
   <div className="star-rating">
-    <button className="star-rating-clear" onClick={() => onSelect(null)}>
-      Clear
-    </button>
+    {onSelect && (
+      <button
+        type="button"
+        className="star-rating-clear"
+        onClick={() => onSelect && onSelect(null)}
+      >
+        Clear
+      </button>
+    )}
     {[1, 2, 3, 4, 5].map(rating => (
       <label key={rating}>
         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="45">
@@ -40,8 +46,9 @@ const StarRating = ({ onSelect, selectedRating }: Props) => (
         <input
           type="radio"
           name="selected-rating"
-          onChange={() => onSelect(rating)}
+          onChange={() => onSelect != null && onSelect(rating)}
           checked={rating === selectedRating}
+          disabled={onSelect == null}
         />
       </label>
     ))}
