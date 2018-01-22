@@ -6,6 +6,7 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.0"
   },
   "scripts": {
@@ -67,6 +68,21 @@
           "extensions": [
             ".js"
           ]
+        }
+      ],
+      "jsx-a11y/anchor-is-valid": [
+        "error",
+        {
+          "components": [ "Link" ],
+          "specialLink": "to"
+        }
+      ],
+      "jsx-a11y/label-has-for": [
+        "error",
+        {
+          "required": {
+            "some": ["nesting", "id"]
+          }
         }
       ]
     }

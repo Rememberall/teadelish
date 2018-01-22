@@ -1,6 +1,7 @@
 // @flow
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './footer.css';
 
@@ -13,8 +14,12 @@ const Footer = () => (
     />
     <nav>
       <ul>
-        <li className="selected">Home</li>
-        <li>Profile</li>
+        <li className="selected">
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/checkin">Checkin</Link>
+        </li>
       </ul>
     </nav>
   </footer>

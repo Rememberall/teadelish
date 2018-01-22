@@ -93,10 +93,20 @@ Array [
             <li
                 className="selected"
             >
-                Home
+                <a
+                    href="/"
+                    onClick={[Function]}
+                >
+                    Home
+                </a>
             </li>
             <li>
-                Profile
+                <a
+                    href="/checkin"
+                    onClick={[Function]}
+                >
+                    Checkin
+                </a>
             </li>
         </ul>
     </nav>
