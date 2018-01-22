@@ -10,7 +10,8 @@
     "react-scripts": "1.1.0"
   },
   "scripts": {
-    "precommit": "stylelint \"src/**/*.css\" --fix && eslint . --fix && flow && CI=true yarn test",
+    "precommit": "yarn verify",
+    "verify": "stylelint \"src/**/*.css\" --fix && eslint . --fix && flow && CI=true yarn test",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
