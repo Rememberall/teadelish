@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should not change 1`] = `
+Array [
+  <h1>
+    Latest checkins
+</h1>,
+  <ul
+    className="checkin-feed"
+>
+    <li
+        className="checkin-feed-item"
+    >
+        <img
+            alt=""
+            src="http://www.swedishfoodshop.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/r/u/russian_earl_grey_20-pack_40g.jpg"
+        />
+        <div>
+            <h1>
+                Lipton
+                 
+                Russian Earl Grey
+            </h1>
+            <p>
+                5
+                 / 5
+            </p>
+            <p>
+                SOOOO GOOD
+            </p>
+        </div>
+    </li>
+    <li
+        className="checkin-feed-item"
+    >
+        <img
+            alt=""
+            src="http://www.swedishfoodshop.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/r/u/russian_earl_grey_20-pack_40g.jpg"
+        />
+        <div>
+            <h1>
+                Twinings
+                 
+                Darjeeling
+            </h1>
+            <p>
+                4
+                 / 5
+            </p>
+            <p>
+                A really long comment about how almost-perfect this tea is but not quite because I think it was a little too bitter and it didn't pair very well with milk because it's not quite strong enough
+            </p>
+        </div>
+    </li>
+    <li
+        className="checkin-feed-item"
+    >
+        <img
+            alt=""
+            src="http://www.swedishfoodshop.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/r/u/russian_earl_grey_20-pack_40g.jpg"
+        />
+        <div>
+            <h1>
+                Fortnum & Mason
+                 
+                Smokey Earl Grey
+            </h1>
+            <p>
+                2
+                 / 5
+            </p>
+            <p>
+                A bit too much smoke for us
+            </p>
+        </div>
+    </li>
+</ul>,
+]
+`;
