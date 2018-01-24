@@ -1,0 +1,36 @@
+.input-group {
+  height: 200px;
+  overflow: hidden;
+  margin: 0.5em;
+}
+
+.input-group--label {
+  user-select: none;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  left: 0;
+  top: 0;
+  transition: 0.1s ease-in;
+  font-size: 1.1em;
+  white-space: nowrap;
+
+  font-size: 1.1em;
+
+  color: red;
+}
+
+.input-group--is-waiting .input-group--label {
+  color: grey;
+  top: 1.9em;
+  font-size: 1.3em;
+  padding-left: 0.5em;
+}
+
+.input-group--input {
+  font-size: 1em;
+  padding: 0.5em;
+  width: calc(100% - 1.3em);
+  margin-top: 0.5em;
+}
