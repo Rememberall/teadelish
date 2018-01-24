@@ -11,6 +11,18 @@ import LatestCheckins from './checkins/latest';
 import CheckinForm from './checkins/form';
 import './app.css';
 
+import type { InputProps } from './blocks/input/types';
+
+const TextareaInput = ({ id, onChange, onFocus, onBlur }: InputProps) => (
+  <textarea
+    id={id}
+    className="input-group--input"
+    onChange={e => onChange(e.target.value)}
+    onFocus={onFocus}
+    onBlur={onBlur}
+  />
+);
+
 const App = () => (
   <BrowserRouter>
     <Fragment>
@@ -24,6 +36,9 @@ const App = () => (
           }}
         >
           {TextInput}
+        </InputGroup>
+        <InputGroup id="sup" label="banana" onChange={console.log}>
+          {TextareaInput}
         </InputGroup>
       </div>
       <section className="content">
