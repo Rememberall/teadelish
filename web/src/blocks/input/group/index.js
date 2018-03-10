@@ -8,7 +8,12 @@ import './group.css';
 type Props = {
   id: string,
   label: string,
-  children: Input,
+  render: ({
+    id: string,
+    onChange: (e: SyntheticInputEvent<HTMLInputElement>) => void,
+    onFocus: () => void,
+    onBlur: () => void,
+  }) => Element,
   onChange: (newValue: string) => void
 };
 
@@ -27,7 +32,7 @@ class InputGroup extends Component<Props, State> {
     };
   }
   render() {
-    const { id, label, children: InputElement, onChange } = this.props;
+    const { id, label, render } = this.props;
 
     return (
       <div
@@ -39,17 +44,12 @@ class InputGroup extends Component<Props, State> {
         <label htmlFor={id} className="input-group--label">
           {label}
         </label>
-        {
-          <InputElement
-            onChange={value => {
-              this.setState({ value });
-              onChange(value);
-            }}
-            onFocus={() => this.setState({ hasFocus: true })}
-            onBlur={() => this.setState({ hasFocus: false })}
-            id={id}
-          />
-        }
+        {render({
+          id: id,
+          onChange: (e) => this.setState({ value: e.target.value }),
+          onFocus: () => this.setState({ hasFocus: true }),
+          onBlur:() =>  this.setState({ hasFocus: false }),
+        })}
       </div>
     );
   }

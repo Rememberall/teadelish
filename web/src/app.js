@@ -31,9 +31,9 @@ const App = () => (
         <InputGroup
           id="hello"
           label="What's up JdadjioasdjiosajdiosajdoiasjdioasjiodJ:DSADIOSJDIO:sjdioajiodjsaidjoiajdoijdoiajsjdioas"
-          onChange={newValue => {
-            console.log(newValue);
-          }}
+          render={({id, onChange, onFocus, onBlur}) => (
+            <input id={id} onChange={onChange} onFocus={onFocus} onBlur={onBlur} />
+          )}
         >
           {TextInput}
         </InputGroup>
