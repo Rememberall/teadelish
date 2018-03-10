@@ -11,7 +11,6 @@ type LatestCheckinsProps = {
 
 const LatestCheckins = ({ latestCheckins }: LatestCheckinsProps) => (
   <Fragment>
-    {console.log(latestCheckins)}
     <h1>Latest checkins</h1>
     <CheckinFeed checkins={latestCheckins} />
   </Fragment>
