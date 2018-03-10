@@ -1,54 +1,23 @@
 // @flow
 
-import React, { Component } from 'react';
+import React from 'react';
+import { Form } from 'react-final-form';
 
-import StarRating from '../../rating/star';
-import './form.css';
+import { Input, Textarea, StarRating, SubmitButton } from '../../form';
 
-type State = {
-  rating: ?number
-};
-
-class CheckinForm extends Component<void, State> {
-  constructor() {
-    super();
-    this.state = {
-      rating: null
-    };
-  }
-  render() {
-    return (
-      <form
-        onSubmit={e => {
-          e.preventDefault();
-        }}
-      >
+const CheckinForm = () => (
+  <Form onSubmit={console.log}>
+    {({ handleSubmit, change }) => (
+      <form onSubmit={handleSubmit}>
         <h1>Checkin!</h1>
-        <div>
-          <label htmlFor="brand">Brand</label>
-          <input id="brand" type="text" disabled />
-        </div>
-        <div>
-          <label htmlFor="name">Name</label>
-          <input id="name" type="text" disabled />
-        </div>
-        <div>
-          <label htmlFor="rating">Rating (0–5)</label>
-          <StarRating
-            onSelect={(rating: ?number) => this.setState({ rating })}
-            selectedRating={this.state.rating}
-          />
-        </div>
-        <div>
-          <label htmlFor="comment">Comment</label>
-          <textarea id="comment" />
-        </div>
-        <div>
-          <button>Checkin</button>
-        </div>
+        <Input name="brand" label="Brand" />
+        <Input name="name" label="Name" disabled />
+        <StarRating name="rating" label="Rating (0–5)" change={change} />
+        <Textarea name="comment" label="Comment" />
+        <SubmitButton>Checkin</SubmitButton>
       </form>
-    );
-  }
-}
+    )}
+  </Form>
+);
 
 export default CheckinForm;

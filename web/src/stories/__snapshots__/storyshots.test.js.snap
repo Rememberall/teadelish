@@ -1,0 +1,719 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Form all components 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="input"
+  >
+    <label
+      htmlFor="brand"
+    >
+      Standard input
+    </label>
+    <input
+      disabled={false}
+      id="input"
+      name="input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+  <div
+    className="input input--textarea"
+  >
+    <label
+      htmlFor="textarea"
+    >
+      Standard textarea
+    </label>
+    <textarea
+      disabled={false}
+      id="textarea"
+      name="textarea"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+  <div
+    className="input"
+  >
+    <label
+      htmlFor="starRating"
+    >
+      Rating (0–5)
+    </label>
+    <div
+      className="star-rating"
+    >
+      <button
+        className="star-rating-clear"
+        onClick={[Function]}
+      >
+        Clear
+      </button>
+      <label>
+        <svg
+          height="45"
+          width="50"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            Five Pointed Star
+          </title>
+          <path
+            d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+            fill="lightgrey"
+            stroke="black"
+          />
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+          />
+        </svg>
+        <input
+          name="starRating"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+          value={1}
+        />
+      </label>
+      <label>
+        <svg
+          height="45"
+          width="50"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            Five Pointed Star
+          </title>
+          <path
+            d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+            fill="lightgrey"
+            stroke="black"
+          />
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+          />
+        </svg>
+        <input
+          name="starRating"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+          value={2}
+        />
+      </label>
+      <label>
+        <svg
+          height="45"
+          width="50"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            Five Pointed Star
+          </title>
+          <path
+            d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+            fill="lightgrey"
+            stroke="black"
+          />
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+          />
+        </svg>
+        <input
+          name="starRating"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+          value={3}
+        />
+      </label>
+      <label>
+        <svg
+          height="45"
+          width="50"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            Five Pointed Star
+          </title>
+          <path
+            d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+            fill="lightgrey"
+            stroke="black"
+          />
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+          />
+        </svg>
+        <input
+          name="starRating"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+          value={4}
+        />
+      </label>
+      <label>
+        <svg
+          height="45"
+          width="50"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            Five Pointed Star
+          </title>
+          <path
+            d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+            fill="lightgrey"
+            stroke="black"
+          />
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+          />
+        </svg>
+        <input
+          name="starRating"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+          value={5}
+        />
+      </label>
+    </div>
+  </div>
+  <button
+    className="button button--submit"
+  >
+    Submit button
+  </button>
+</form>
+`;
+
+exports[`Storyshots Form all components with initial values 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="input"
+  >
+    <label
+      htmlFor="brand"
+    >
+      Standard input
+    </label>
+    <input
+      disabled={false}
+      id="input"
+      name="input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="Hello, input"
+    />
+  </div>
+  <div
+    className="input input--textarea"
+  >
+    <label
+      htmlFor="textarea"
+    >
+      Standard textarea
+    </label>
+    <textarea
+      disabled={false}
+      id="textarea"
+      name="textarea"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="Hello, textarea"
+    />
+  </div>
+  <div
+    className="input"
+  >
+    <label
+      htmlFor="starRating"
+    >
+      Rating (0–5)
+    </label>
+    <div
+      className="star-rating"
+    >
+      <button
+        className="star-rating-clear"
+        onClick={[Function]}
+      >
+        Clear
+      </button>
+      <label>
+        <svg
+          height="45"
+          width="50"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            Five Pointed Star
+          </title>
+          <path
+            d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+            fill="gold"
+            stroke="black"
+          />
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+          />
+        </svg>
+        <input
+          name="starRating"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+          value={1}
+        />
+      </label>
+      <label>
+        <svg
+          height="45"
+          width="50"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            Five Pointed Star
+          </title>
+          <path
+            d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+            fill="gold"
+            stroke="black"
+          />
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+          />
+        </svg>
+        <input
+          name="starRating"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+          value={2}
+        />
+      </label>
+      <label>
+        <svg
+          height="45"
+          width="50"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            Five Pointed Star
+          </title>
+          <path
+            d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+            fill="gold"
+            stroke="black"
+          />
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+          />
+        </svg>
+        <input
+          name="starRating"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+          value={3}
+        />
+      </label>
+      <label>
+        <svg
+          height="45"
+          width="50"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            Five Pointed Star
+          </title>
+          <path
+            d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+            fill="lightgrey"
+            stroke="black"
+          />
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+          />
+        </svg>
+        <input
+          name="starRating"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+          value={4}
+        />
+      </label>
+      <label>
+        <svg
+          height="45"
+          width="50"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            Five Pointed Star
+          </title>
+          <path
+            d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+            fill="lightgrey"
+            stroke="black"
+          />
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+          />
+        </svg>
+        <input
+          name="starRating"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+          value={5}
+        />
+      </label>
+    </div>
+  </div>
+  <button
+    className="button button--submit"
+  >
+    Submit button
+  </button>
+</form>
+`;
+
+exports[`Storyshots star rating simple 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="star-rating"
+  >
+    <button
+      className="star-rating-clear"
+      onClick={[Function]}
+    >
+      Clear
+    </button>
+    <label>
+      <svg
+        height="45"
+        width="50"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Five Pointed Star
+        </title>
+        <path
+          d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+          fill="lightgrey"
+          stroke="black"
+        />
+        <div
+          xmlns="http://www.w3.org/1999/xhtml"
+        />
+      </svg>
+      <input
+        name="rating"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="radio"
+        value={1}
+      />
+    </label>
+    <label>
+      <svg
+        height="45"
+        width="50"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Five Pointed Star
+        </title>
+        <path
+          d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+          fill="lightgrey"
+          stroke="black"
+        />
+        <div
+          xmlns="http://www.w3.org/1999/xhtml"
+        />
+      </svg>
+      <input
+        name="rating"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="radio"
+        value={2}
+      />
+    </label>
+    <label>
+      <svg
+        height="45"
+        width="50"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Five Pointed Star
+        </title>
+        <path
+          d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+          fill="lightgrey"
+          stroke="black"
+        />
+        <div
+          xmlns="http://www.w3.org/1999/xhtml"
+        />
+      </svg>
+      <input
+        name="rating"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="radio"
+        value={3}
+      />
+    </label>
+    <label>
+      <svg
+        height="45"
+        width="50"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Five Pointed Star
+        </title>
+        <path
+          d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+          fill="lightgrey"
+          stroke="black"
+        />
+        <div
+          xmlns="http://www.w3.org/1999/xhtml"
+        />
+      </svg>
+      <input
+        name="rating"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="radio"
+        value={4}
+      />
+    </label>
+    <label>
+      <svg
+        height="45"
+        width="50"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Five Pointed Star
+        </title>
+        <path
+          d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+          fill="lightgrey"
+          stroke="black"
+        />
+        <div
+          xmlns="http://www.w3.org/1999/xhtml"
+        />
+      </svg>
+      <input
+        name="rating"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="radio"
+        value={5}
+      />
+    </label>
+  </div>
+  <button
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
+
+exports[`Storyshots star rating with initial value 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="star-rating"
+  >
+    <button
+      className="star-rating-clear"
+      onClick={[Function]}
+    >
+      Clear
+    </button>
+    <label>
+      <svg
+        height="45"
+        width="50"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Five Pointed Star
+        </title>
+        <path
+          d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+          fill="gold"
+          stroke="black"
+        />
+        <div
+          xmlns="http://www.w3.org/1999/xhtml"
+        />
+      </svg>
+      <input
+        name="rating"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="radio"
+        value={1}
+      />
+    </label>
+    <label>
+      <svg
+        height="45"
+        width="50"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Five Pointed Star
+        </title>
+        <path
+          d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+          fill="gold"
+          stroke="black"
+        />
+        <div
+          xmlns="http://www.w3.org/1999/xhtml"
+        />
+      </svg>
+      <input
+        name="rating"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="radio"
+        value={2}
+      />
+    </label>
+    <label>
+      <svg
+        height="45"
+        width="50"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Five Pointed Star
+        </title>
+        <path
+          d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+          fill="gold"
+          stroke="black"
+        />
+        <div
+          xmlns="http://www.w3.org/1999/xhtml"
+        />
+      </svg>
+      <input
+        name="rating"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="radio"
+        value={3}
+      />
+    </label>
+    <label>
+      <svg
+        height="45"
+        width="50"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Five Pointed Star
+        </title>
+        <path
+          d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+          fill="lightgrey"
+          stroke="black"
+        />
+        <div
+          xmlns="http://www.w3.org/1999/xhtml"
+        />
+      </svg>
+      <input
+        name="rating"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="radio"
+        value={4}
+      />
+    </label>
+    <label>
+      <svg
+        height="45"
+        width="50"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Five Pointed Star
+        </title>
+        <path
+          d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+          fill="lightgrey"
+          stroke="black"
+        />
+        <div
+          xmlns="http://www.w3.org/1999/xhtml"
+        />
+      </svg>
+      <input
+        name="rating"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="radio"
+        value={5}
+      />
+    </label>
+  </div>
+  <button
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
