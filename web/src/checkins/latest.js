@@ -1,10 +1,17 @@
+// @flow
+
 import React, { Fragment } from 'react';
 
-import latestCheckins from '../mock/latest-checkins';
 import CheckinFeed from './feed';
+import { type Checkin } from './feed/item/types';
 
-const LatestCheckins = () => (
+type LatestCheckinsProps = {
+  latestCheckins: Array<Checkin>
+};
+
+const LatestCheckins = ({ latestCheckins }: LatestCheckinsProps) => (
   <Fragment>
+    {console.log(latestCheckins)}
     <h1>Latest checkins</h1>
     <CheckinFeed checkins={latestCheckins} />
   </Fragment>

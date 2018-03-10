@@ -9,19 +9,51 @@ import LatestCheckins from './checkins/latest';
 import CheckinForm from './checkins/form';
 import './app.css';
 
-const App = () => (
-  <BrowserRouter>
-    <Fragment>
-      <Header />
-      <section className="content">
-        <Switch>
-          <Route exact path="/" component={LatestCheckins} />
-          <Route exact path="/checkin" component={CheckinForm} />
-        </Switch>
-      </section>
-      <Footer />
-    </Fragment>
-  </BrowserRouter>
-);
+import type { Checkin } from './checkins/feed/item/types';
+import mockLatestCheckins from './mock/latest-checkins';
 
-export default App;
+type AppState = {
+  latestCheckins: Array<Checkin>
+};
+
+export default class App extends React.PureComponent<void, AppState> {
+  state = {
+    latestCheckins: mockLatestCheckins
+  };
+
+  render() {
+    const { latestCheckins } = this.state;
+    return (
+      <BrowserRouter>
+        <Fragment>
+          <Header />
+          <section className="content">
+            <Switch>
+              <Route
+                exact
+                path="/"
+                render={() => (
+                  <LatestCheckins latestCheckins={latestCheckins} />
+                )}
+              />
+              <Route
+                exact
+                path="/checkin"
+                render={() => (
+                  <CheckinForm
+                    handleNewCheckin={checkin =>
+                      this.setState({
+                        latestCheckins: [checkin, ...this.state.latestCheckins]
+                      })
+                    }
+                  />
+                )}
+              />
+            </Switch>
+          </section>
+          <Footer />
+        </Fragment>
+      </BrowserRouter>
+    );
+  }
+}
