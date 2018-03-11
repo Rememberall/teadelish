@@ -3,7 +3,7 @@
 import React from 'react';
 import { Form, FormSpy } from 'react-final-form';
 
-import { Input, Textarea, StarRating, SubmitButton } from '../../form';
+import { Input, Textarea, StarRatingInput, SubmitButton } from '../../form';
 import { type Checkin } from '../feed/item/types';
 
 type CheckinFormProps = {
@@ -44,7 +44,7 @@ const CheckinForm = ({ handleNewCheckin }: CheckinFormProps) => (
             />
           )}
         />
-        <StarRating name="rating" label="Rating (0–5)" change={change} />
+        <StarRatingInput name="rating" label="Rating (0–5)" change={change} />
         <Textarea name="comment" label="Comment" />
         <SubmitButton>Checkin</SubmitButton>
       </form>

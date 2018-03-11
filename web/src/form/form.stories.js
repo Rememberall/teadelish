@@ -2,16 +2,16 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { Form } from 'react-final-form';
-import { Input, Textarea, StarRating, SubmitButton } from './index';
+import { Input, Textarea, StarRatingInput, SubmitButton } from './index';
 
 storiesOf('Form', module)
   .add('all components', () => (
     <Form onSubmit={action('onSubmit')}>
-      {({ handleSubmit, change }) => (
+      {({ handleSubmit }) => (
         <form onSubmit={handleSubmit}>
           <Input name="input" label="Standard input" />
           <Textarea name="textarea" label="Standard textarea" />
-          <StarRating name="starRating" label="Star rating" change={change} />
+          <StarRatingInput name="starRating" label="Star rating" />
           <SubmitButton>Submit button</SubmitButton>
         </form>
       )}
@@ -30,7 +30,11 @@ storiesOf('Form', module)
         <form onSubmit={handleSubmit}>
           <Input name="input" label="Standard input" />
           <Textarea name="textarea" label="Standard textarea" />
-          <StarRating name="starRating" label="Star rating" change={change} />
+          <StarRatingInput
+            name="starRating"
+            label="Star rating"
+            change={change}
+          />
           <SubmitButton>Submit button</SubmitButton>
         </form>
       )}

@@ -3,10 +3,24 @@
   margin-top: 1em;
 }
 
-.input > label {
+.input > label,.input__label {
   flex: 1;
 }
 
 .input > input,textarea,.input__field {
   flex: 3;
+}
+
+.input--star-rating .star-rating__clear {
+  display: inline-block;
+  height: 100%;
+  background-color: red;
+}
+
+.input--star-rating label {
+  cursor: pointer;
+}
+
+.input--star-rating label > input[type="radio"] {
+  visibility: hidden;
 }

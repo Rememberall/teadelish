@@ -2,15 +2,3 @@
   display: flex;
   justify-content: space-between;
 }
-
-.star-rating > label {
-  cursor: pointer;
-}
-
-.star-rating > label > input[type="radio"] {
-  visibility: hidden;
-}
-
-.star-rating > .star-rating-clear {
-  width: auto;
-}
