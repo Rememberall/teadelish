@@ -1,6 +1,6 @@
 .star-rating {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .star-rating > label {
