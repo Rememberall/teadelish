@@ -7,7 +7,7 @@ import CheckinFeedItem from './item';
 import './feed.css';
 
 type Props = {
-  checkins: Checkin[]
+  checkins: Array<Checkin>
 };
 
 const CheckinFeed = ({ checkins }: Props) => (

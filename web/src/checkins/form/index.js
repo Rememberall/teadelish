@@ -1,17 +1,49 @@
 // @flow
 
 import React from 'react';
-import { Form } from 'react-final-form';
+import { Form, FormSpy } from 'react-final-form';
 
 import { Input, Textarea, StarRating, SubmitButton } from '../../form';
+import { type Checkin } from '../feed/item/types';
 
-const CheckinForm = () => (
-  <Form onSubmit={console.log}>
-    {({ handleSubmit, change }) => (
-      <form onSubmit={handleSubmit}>
+type CheckinFormProps = {
+  handleNewCheckin: (newCheckin: Checkin) => void
+};
+
+const CheckinForm = ({ handleNewCheckin }: CheckinFormProps) => (
+  <Form
+    onSubmit={({ brand, name, rating, comment }) => {
+      const beverage = { brand, name };
+
+      const newCheckin = {
+        beverage,
+        rating,
+        comment
+      };
+
+      handleNewCheckin(newCheckin);
+    }}
+  >
+    {({ handleSubmit, reset, change }) => (
+      <form
+        onSubmit={e => {
+          handleSubmit(e);
+          reset();
+        }}
+      >
         <h1>Checkin!</h1>
-        <Input name="brand" label="Brand" />
-        <Input name="name" label="Name" disabled />
+        <Input name="brand" label="Brand" required />
+        <FormSpy
+          subscription={{ values: true }}
+          render={({ values: { brand } }) => (
+            <Input
+              name="name"
+              label="Name"
+              required
+              disabled={brand === undefined}
+            />
+          )}
+        />
         <StarRating name="rating" label="Rating (0–5)" change={change} />
         <Textarea name="comment" label="Comment" />
         <SubmitButton>Checkin</SubmitButton>
